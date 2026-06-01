@@ -1,4 +1,4 @@
-# PORTAL MANIFESTASI SEMESTA DIGITAL v4.0
+# 🚪 PORTAL MANIFESTASI SEMESTA DIGITAL v4.0
 <img width="1672" height="941" alt="ChatGPT Image 1 Jun 2026, 15 52 17 (1)" src="https://github.com/user-attachments/assets/6783d8b6-e152-4da9-9679-f935c810aa1b" />
 
 ### Universe Resonance Protocol
@@ -258,8 +258,4 @@ Nilai utama sistem terletak pada pengalaman pengguna, simbolisme digital, visual
 
 # Author
 
-Deddy Ratnanto
-
-Universe Resonance Protocol v4.0
-
-Fire • Forget • Trust
+Deddy Ratnanto | Universe Resonance Protocol v4.0 | Fire • Forget • Trust
