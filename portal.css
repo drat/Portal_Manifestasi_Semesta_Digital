@@ -1,0 +1,257 @@
+footer{display:none!important;}
+
+.stars{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-5;overflow:hidden;pointer-events:none;}
+.stars:before{
+content:"";
+position:absolute;
+width:2px;
+height:2px;
+background:#fff;
+box-shadow:
+50px 80px #fff,120px 160px #fff,200px 300px #fff,350px 120px #fff,
+500px 200px #fff,650px 90px #fff,800px 150px #fff,950px 320px #fff,
+1100px 240px #fff,1250px 100px #fff,1400px 260px #fff,1600px 400px #fff,
+1800px 200px #fff,300px 500px #fff,700px 700px #fff,1200px 650px #fff,
+1500px 800px #fff,1700px 950px #fff;
+animation:starMove 120s linear infinite;
+opacity:.5;
+}
+
+@keyframes starMove{
+from{transform:translateY(0);}
+to{transform:translateY(-500px);}
+}
+
+.cosmic-particles{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-4;pointer-events:none;}
+.cosmic-particles:before{
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background:radial-gradient(circle,rgba(0,255,255,.2) 0,transparent 2px);
+background-size:200px 200px;
+animation:particleFloat 50s linear infinite;
+opacity:.15;
+}
+
+@keyframes particleFloat{
+from{transform:translateY(0);}
+to{transform:translateY(-300px);}
+}
+
+.geometry{
+position:fixed;
+left:50%;
+top:50%;
+width:1200px;
+height:1200px;
+transform:translate(-50%,-50%);
+border-radius:50%;
+border:1px solid rgba(0,255,255,.04);
+z-index:-3;
+pointer-events:none;
+animation:geometrySpin 240s linear infinite;
+}
+
+.geometry:before{
+content:"";
+position:absolute;
+inset:120px;
+border-radius:50%;
+border:1px solid rgba(0,255,255,.03);
+}
+
+.geometry:after{
+content:"";
+position:absolute;
+inset:240px;
+border-radius:50%;
+border:1px solid rgba(0,255,255,.03);
+}
+
+@keyframes geometrySpin{
+from{transform:translate(-50%,-50%) rotate(0deg);}
+to{transform:translate(-50%,-50%) rotate(360deg);}
+}
+
+body{
+background:
+radial-gradient(circle at 20% 20%,rgba(0,255,255,.08),transparent 20%),
+radial-gradient(circle at 80% 30%,rgba(0,119,255,.08),transparent 20%),
+radial-gradient(circle at 50% 90%,rgba(170,0,255,.06),transparent 25%),
+#020617!important;
+overflow-x:hidden;
+}
+
+body:before{
+content:"";
+position:fixed;
+inset:0;
+pointer-events:none;
+background:radial-gradient(circle at 50% 50%,rgba(0,255,255,.05),transparent 40%);
+filter:blur(120px);
+animation:nebula 20s ease-in-out infinite;
+z-index:-2;
+}
+
+@keyframes nebula{
+0%{transform:scale(1);}
+50%{transform:scale(1.2);}
+100%{transform:scale(1);}
+}
+
+.gradio-container{max-width:1500px!important;}
+
+.portal-card{
+position:relative;
+overflow:hidden;
+background:rgba(255,255,255,.04);
+backdrop-filter:blur(30px);
+border:1px solid rgba(0,255,255,.1);
+border-radius:32px;
+padding:40px;
+box-shadow:0 0 40px rgba(0,255,255,.08),0 0 120px rgba(0,119,255,.08);
+}
+
+.portal-orb{
+cursor:pointer;
+width:340px;
+height:340px;
+margin:auto;
+border-radius:50%;
+background:conic-gradient(from 0deg,#00ffff,#0066ff,#7b2cff,#00ffff);
+box-shadow:0 0 60px #00ffff,0 0 150px #0066ff,0 0 280px #0066ff;
+animation:orbspin 40s linear infinite;
+position:relative;
+}
+
+.portal-orb:hover{
+box-shadow:0 0 80px #00ffff,0 0 220px #0066ff,0 0 420px #8a2be2;
+transition:all .5s ease;
+}
+
+.portal-orb:before{
+content:"";
+position:absolute;
+inset:20px;
+border-radius:50%;
+background:radial-gradient(circle,rgba(255,255,255,.95),rgba(0,255,255,.4),transparent);
+animation:pulsecore 5s infinite;
+}
+
+@keyframes pulsecore{
+0%{transform:scale(.9);opacity:.8;}
+50%{transform:scale(1.05);opacity:1;}
+100%{transform:scale(.9);opacity:.8;}
+}
+
+@keyframes orbspin{
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+}
+
+.sacred-ring{
+width:420px;
+height:420px;
+position:absolute;
+left:50%;
+top:220px;
+transform:translateX(-50%);
+border-radius:50%;
+border:1px solid rgba(0,255,255,.12);
+box-shadow:0 0 40px rgba(0,255,255,.08);
+animation:ringspin 90s linear infinite;
+}
+
+@keyframes ringspin{
+from{transform:translateX(-50%) rotate(0deg);}
+to{transform:translateX(-50%) rotate(360deg);}
+}
+
+.portal-title{
+margin-top:40px;
+font-size:58px;
+font-weight:800;
+letter-spacing:4px;
+text-align:center;
+color:#fff;
+text-shadow:0 0 20px rgba(0,255,255,.4);
+}
+
+.portal-subtitle{
+text-align:center;
+margin-top:10px;
+font-size:20px;
+color:#7dd3fc;
+}
+
+.portal-quote{
+text-align:center;
+margin-top:25px;
+font-size:24px;
+font-style:italic;
+color:#67e8f9;
+opacity:.9;
+}
+
+textarea,input{
+background:rgba(255,255,255,.04)!important;
+border:1px solid rgba(255,255,255,.08)!important;
+border-radius:18px!important;
+font-size:18px!important;
+padding:18px!important;
+backdrop-filter:blur(15px);
+}
+
+button{
+height:72px!important;
+font-size:22px!important;
+font-weight:700!important;
+letter-spacing:2px!important;
+border-radius:40px!important;
+background:linear-gradient(90deg,#00c6ff,#0072ff)!important;
+box-shadow:0 0 20px rgba(0,198,255,.35),0 0 60px rgba(0,114,255,.25)!important;
+transition:all .3s ease!important;
+}
+
+button:hover{
+transform:translateY(-3px);
+box-shadow:0 0 30px rgba(0,255,255,.5),0 0 80px rgba(0,119,255,.4)!important;
+}
+
+.seal-panel{
+background:rgba(255,255,255,.04);
+backdrop-filter:blur(25px);
+border:1px solid rgba(0,255,255,.15);
+border-radius:28px;
+padding:30px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,255,255,.15),0 0 80px rgba(0,119,255,.08);
+animation:sealglow 6s infinite;
+}
+
+@keyframes sealglow{
+0%{box-shadow:0 0 20px rgba(0,255,255,.10);}
+50%{box-shadow:0 0 50px rgba(0,255,255,.25);}
+100%{box-shadow:0 0 20px rgba(0,255,255,.10);}
+}
+
+.seal-title{font-size:14px;letter-spacing:4px;color:#7dd3fc;}
+.seal-id{font-size:36px;font-weight:800;margin-top:15px;}
+.seal-code{margin-top:10px;color:#67e8f9;word-break:break-word;}
+.seal-divider{height:1px;background:rgba(255,255,255,.10);margin:25px 0;}
+.seal-item{font-size:16px;color:#7dd3fc;margin-top:12px;}
+.seal-value{font-size:22px;font-weight:700;}
+
+.portal-status{
+text-align:center;
+font-size:18px;
+font-weight:700;
+padding:15px;
+color:#67e8f9;
+text-shadow:0 0 10px rgba(0,255,255,.3);
+}
+
+img,video,audio{
+border-radius:20px!important;
+}
