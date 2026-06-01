@@ -1,5 +1,5 @@
 # PORTAL MANIFESTASI SEMESTA DIGITAL v4.0
-
+![Uploading ChatGPT Image 1 Jun 2026, 15.52.17.png…]()
 ### Universe Resonance Protocol
 
 > Fire • Forget • Trust
@@ -30,6 +30,7 @@ Trust
 ```
 
 Setelah portal diaktifkan, pengguna menerima artefak digital unik sebagai representasi simbolik bahwa tujuan telah direkam dan diproses oleh sistem.
+![Uploading Portal-Manifestasi-Semesta-Digital-06-01-2026_03_52_PM.png…]()
 
 ---
 
